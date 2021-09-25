@@ -1,12 +1,13 @@
 .container {
-    width: 70%;
+    padding: 10%;
     margin: auto;
     text-align: center;
 }
 
 .dice {
     text-align: center;
-    display: inline-block;
+    display: inline-grid;
+    padding: 2rem;
 }
 
 body {
@@ -32,12 +33,25 @@ p {
 }
 
 img {
-    width: 80%;
+    width: 100%;
 }
 
 footer {
     margin-top: 5%;
+    font-size: 2rem;
     color: #EEEEEE;
     text-align: center;
     font-family: 'Indie Flower', cursive;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        text-align: center;
+    }
+    .dice {
+        width: 50%;
+    }
+    img {
+        width: 100;
+    }
 }
